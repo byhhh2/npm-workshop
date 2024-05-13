@@ -1,5 +1,5 @@
 {
-    "name": "@movie/secure-random",
+    "name": "@younghwa/secure-random",
     "description": "Generate a safe random number",
     "version": "0.0.1",
     "main": "./dist/index.js",

@@ -1,5 +1,5 @@
 {
-    "name": "@movie/secure-dice",
+    "name": "@younghwa/secure-dice",
     "description": "Random dice react component",
     "version": "0.0.1",
     "main": "./dist/index.js",
