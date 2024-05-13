@@ -1,13 +1,20 @@
 {
     "name": "@younghwa/secure-dice",
     "description": "Random dice react component",
-    "version": "0.0.1",
-    "main": "./dist/index.js",
+    "version": "0.0.2",
+    "main": "./dist/cjs/index.js",
+    "module": "./dist/esm/index.js",
+    "exports": {
+        ".": {
+            "import": "./dist/esm/index.js",
+            "require": "./dist/cjs/index.js"
+        }
+    },
     "files": [
         "dist"
     ],
     "scripts": {
-        "build": "tsc --build",
+        "build": "pnpm run clean & tsc --p ./cjs/tsconfig.json & tsc --p ./esm/tsconfig.json",
         "clean": "rm -rf dist",
         "storybook": "storybook dev -p 6006",
         "build-storybook": "storybook build"
