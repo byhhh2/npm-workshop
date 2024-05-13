@@ -1,7 +1,7 @@
 {
     "name": "@younghwa/secure-random",
     "description": "Generate a safe random number",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "main": "./dist/cjs/index.js",
     "module": "./dist/esm/index.js",
     "exports": {
