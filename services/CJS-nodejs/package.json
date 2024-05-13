@@ -1,16 +1,19 @@
 {
-  "name": "cjs-nodejs",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "build": "tsc"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@types/node": "^20.12.8",
-    "typescript": "^5.4.5"
-  }
+    "name": "cjs-nodejs",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "tsc"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/node": "^20.12.8",
+        "typescript": "^5.4.5"
+    },
+    "dependencies": {
+        "@younghwa/secure-random": "0.0.5"
+    }
 }

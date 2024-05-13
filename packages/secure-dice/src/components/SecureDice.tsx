@@ -1,6 +1,8 @@
+'use client'
+
 import {useState} from 'react'
 
-import {secureRandom} from '@movie/secure-random'
+import {secureRandom} from '@younghwa/secure-random'
 import classNames from 'classnames/bind'
 
 import one from '../assets/1.png'

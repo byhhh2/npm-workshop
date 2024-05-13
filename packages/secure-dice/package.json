@@ -1,7 +1,7 @@
 {
     "name": "@younghwa/secure-dice",
     "description": "Random dice react component",
-    "version": "0.0.2",
+    "version": "0.0.8",
     "main": "./dist/cjs/index.js",
     "module": "./dist/esm/index.js",
     "exports": {
@@ -14,13 +14,14 @@
         "dist"
     ],
     "scripts": {
-        "build": "pnpm run clean & tsc --p ./cjs/tsconfig.json & tsc --p ./esm/tsconfig.json",
+        "build": "pnpm run clean & tsc --p ./cjs/tsconfig.json & tsc --p ./esm/tsconfig.json & pnpm run copy",
         "clean": "rm -rf dist",
         "storybook": "storybook dev -p 6006",
-        "build-storybook": "storybook build"
+        "build-storybook": "storybook build",
+        "copy": "npx copyfiles src/assets/*.png dist/cjs & npx copyfiles src/assets/*.png dist/esm & npx copyfiles src/components/SecureDice.module.css dist/cjs & npx copyfiles src/components/SecureDice.module.css dist/esm"
     },
     "dependencies": {
-        "@movie/secure-random": "workspace:*",
+        "@younghwa/secure-random": "^0.0.5",
         "classnames": "^2.5.1",
         "react": "^18.3.1",
         "react-dom": "^18.3.1"
@@ -38,6 +39,7 @@
         "@storybook/react-webpack5": "^8.0.10",
         "@storybook/test": "^8.0.10",
         "@types/react": "^18.3.2",
+        "copyfiles": "^2.4.1",
         "prop-types": "^15.8.1",
         "sass": "^1.77.1",
         "storybook": "^8.0.10"

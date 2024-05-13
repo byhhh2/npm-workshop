@@ -1,7 +1,7 @@
 {
     "name": "@younghwa/secure-random",
     "description": "Generate a safe random number",
-    "version": "0.0.3",
+    "version": "0.0.5",
     "main": "./dist/cjs/index.js",
     "module": "./dist/esm/index.js",
     "exports": {
@@ -15,7 +15,8 @@
     ],
     "scripts": {
         "build": "pnpm run clean & tsc --p ./cjs/tsconfig.json & tsc --p ./esm/tsconfig.json",
-        "clean": "rm -rf dist"
+        "clean": "rm -rf dist",
+        "publish": "pnpm run build & npm publish"
     },
     "devDependencies": {},
     "dependencies": {}

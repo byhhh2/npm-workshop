@@ -1,19 +1,20 @@
 {
-  "name": "esmn-nodejs",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "type": "module",
-  "scripts": {    
-    "build": "tsc"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "typescript": "^5.4.5"
-  },
-  "devDependencies": {
-    "@types/node": "^20.12.8"
-  }
+    "name": "esmn-nodejs",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "build": "tsc"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "typescript": "^5.4.5",
+        "@younghwa/secure-random": "0.0.5"
+    },
+    "devDependencies": {
+        "@types/node": "^20.12.8"
+    }
 }
