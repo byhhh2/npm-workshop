@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "moduleResolution": "node",
+        "target": "es2015",
+        "outDir": "./dist",
+        "strict": true,
+        "declaration": true,
+        "jsx": "react-jsx"
+    },
+    "files": ["../../global.d.ts"],
+    "include": ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"],
+    "exclude": ["dist"]
+}
